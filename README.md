@@ -27,7 +27,7 @@ Much of my work on the plugin is based on the Jekyll's native `highlight` tag, a
 
 For a plain, old vanilla experience (like you see on this page), the syntax is pretty straightforward.
 
-``` ruby
+``` html
 ... content ...
 {% prism javascript %}
 var obj = { 'foo': true, 'bar': false };
@@ -43,7 +43,7 @@ Like Jekyll's `highlight`, the Prism plugin also can highlight lines using `line
 
 *Note:* you need to include line highlighting in your Prism download for this to work.
 
-``` ruby
+``` html
 ... content ...
 {% prism javascript linenos="1,4" %}
 var obj = { 'foo': true, 'bar': false };
@@ -57,7 +57,7 @@ for (key in obj) {
 
 And for something Prism doesn't offer out of the box, declaring `linenos` without a value will highlight all lines.
 
-``` ruby
+``` html
 ... content ...
 {% prism javascript linenos %}
 var obj = { 'foo': true, 'bar': false };
