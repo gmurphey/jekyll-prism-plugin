@@ -3,7 +3,7 @@ module Jekyll
   class PrismBlock < Liquid::Block
     include Liquid::StandardFilters
 
-    OPTIONS_SYNTAX = %r{^([a-zA-Z0-9.+#-]+)((\s+\w+(=\w+)?)*)$}
+    OPTIONS_SYNTAX = %r{^([a-zA-Z0-9.+#-]+)((\s+\w+(=[0-9,-]+)?)*)$}
 
     def initialize(tag_name, markup, tokens)
       super
