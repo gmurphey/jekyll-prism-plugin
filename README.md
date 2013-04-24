@@ -1,12 +1,12 @@
 # Jekyll Prism Plugin
 
-The Jekyll Prism plugin is a replacement for native Pygments syntax highlighting in Jekyll. It uses the [Prism Syntax Highlighter][http://prismjs.com/].
+The Jekyll Prism plugin is a replacement for native Pygments syntax highlighting in [Jekyll](http://github.com/mojombo/jekyll/). It uses the [Prism Syntax Highlighter](http://prismjs.com/).
 
 ## The Setup
 
 The Prism plugin is very easy to install and start using.
 
-Copy `prism.rb` to your plugins folder setup your layout to use the [Prism JavaScript and styles](http://prismjs.com/download.html).
+Copy `prism.rb` to your plugins folder and setup your layouts to use the [Prism JavaScript and styles](http://prismjs.com/download.html).
 
 ``` html
 <html>
