@@ -45,7 +45,7 @@ Like Jekyll's `highlight`, the Prism plugin also can highlight lines using `line
 
 ``` html
 ... content ...
-{% prism javascript linenos="1,4" %}
+{% prism javascript linenos=1,4 %}
 var obj = { 'foo': true, 'bar': false };
 
 for (key in obj) {
