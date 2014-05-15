@@ -1,5 +1,8 @@
 # Jekyll Prism Plugin
 
+[![Gittip](http://img.shields.io/gittip/gmurphey.svg)](https://www.gittip.com/gmurphey/)
+
+
 The Jekyll Prism plugin is a replacement for native Pygments syntax highlighting in [Jekyll](http://github.com/mojombo/jekyll/). It uses the [Prism Syntax Highlighter](http://prismjs.com/).
 
 ## The Setup
