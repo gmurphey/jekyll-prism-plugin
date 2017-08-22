@@ -14,13 +14,11 @@ module Jekyll
           $2.split.each do |opt|
             key, value = opt.split('=')
             if value.nil?
-              value = true
+              value = ''
             end
             tmp_options[key] = value
           end
           @options = tmp_options
-        else
-          @options = { "linenos" => "" }
         end
       else
         raise SyntaxError.new("Syntax Error in 'prism' - Valid syntax: prism <lang> [linenos(='1-5')]")
@@ -30,13 +28,15 @@ module Jekyll
     def render(context)
       code = h(super).strip
 
-      if @options["linenos"] == true
-        @options["linenos"] = "1-#{code.lines.count}"
+      linenos = ''
+      linenos_content = @options["linenos"]
+      if !linenos_content.nil?
+        linenos = "class='line-numbers' data-line='#{linenos_content}'"
       end
 
       <<-HTML
 <div>
-  <pre data-line='#{@options["linenos"]}'><code class='language-#{@lang}'>#{code}</code></pre>
+  <pre #{linenos}><code class='language-#{@lang}'>#{code}</code></pre>
 </div>
       HTML
     end
